@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\New folder (2)\\WF_Whiepuppy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|d:\\new folder (2)\\wf_whiepuppy\\wf_whiepuppy\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|solutionrelative:wf_whiepuppy\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|D:\\New folder (2)\\WF_Whiepuppy\\wf_whiepuppy\\fshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|solutionrelative:wf_whiepuppy\\fshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FShow.cs",
+              "DocumentMoniker": "D:\\New folder (2)\\WF_Whiepuppy\\WF_Whiepuppy\\FShow.cs",
+              "RelativeDocumentMoniker": "WF_Whiepuppy\\FShow.cs",
+              "ToolTip": "D:\\New folder (2)\\WF_Whiepuppy\\WF_Whiepuppy\\FShow.cs",
+              "RelativeToolTip": "WF_Whiepuppy\\FShow.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T18:39:36.014Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Fmain.cs",
+              "DocumentMoniker": "D:\\New folder (2)\\WF_Whiepuppy\\WF_Whiepuppy\\Fmain.cs",
+              "RelativeDocumentMoniker": "WF_Whiepuppy\\Fmain.cs",
+              "ToolTip": "D:\\New folder (2)\\WF_Whiepuppy\\WF_Whiepuppy\\Fmain.cs",
+              "RelativeToolTip": "WF_Whiepuppy\\Fmain.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAADwv1UAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T19:00:15.362Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
