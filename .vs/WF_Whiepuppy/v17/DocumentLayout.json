@@ -1,0 +1,98 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|d:\\new folder (2)\\wf_whitepuppyv0.1\\wf_whiepuppy\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|solutionrelative:wf_whiepuppy\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|D:\\New folder (2)\\WF_WhitePuppyV0.1\\wf_whiepuppy\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|solutionrelative:wf_whiepuppy\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|D:\\New folder (2)\\WF_WhitePuppyV0.1\\wf_whiepuppy\\fdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|solutionrelative:wf_whiepuppy\\fdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|D:\\New folder (2)\\WF_WhitePuppyV0.1\\wf_whiepuppy\\fshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|solutionrelative:wf_whiepuppy\\fshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|D:\\New folder (2)\\WF_WhitePuppyV0.1\\wf_whiepuppy\\fshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BEA7C41-A8C5-4504-989A-6DF30DEA3B9E}|WF_Whiepuppy\\WF_Whiepuppy.csproj|solutionrelative:wf_whiepuppy\\fshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Fmain.cs",
+              "DocumentMoniker": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\WF_Whiepuppy\\Fmain.cs",
+              "RelativeDocumentMoniker": "WF_Whiepuppy\\Fmain.cs",
+              "ToolTip": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\WF_Whiepuppy\\Fmain.cs",
+              "RelativeToolTip": "WF_Whiepuppy\\Fmain.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAswG4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T14:18:00.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fmain.cs [Design]",
+              "DocumentMoniker": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\WF_Whiepuppy\\Fmain.cs",
+              "RelativeDocumentMoniker": "WF_Whiepuppy\\Fmain.cs",
+              "ToolTip": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\WF_Whiepuppy\\Fmain.cs [Design]",
+              "RelativeToolTip": "WF_Whiepuppy\\Fmain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T14:07:45.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Fdetails.cs [Design]",
+              "DocumentMoniker": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\WF_Whiepuppy\\Fdetails.cs",
+              "RelativeDocumentMoniker": "WF_Whiepuppy\\Fdetails.cs",
+              "ToolTip": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\WF_Whiepuppy\\Fdetails.cs [Design]",
+              "RelativeToolTip": "WF_Whiepuppy\\Fdetails.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T14:00:43.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FShow.cs",
+              "DocumentMoniker": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\WF_Whiepuppy\\FShow.cs",
+              "RelativeDocumentMoniker": "WF_Whiepuppy\\FShow.cs",
+              "ToolTip": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\WF_Whiepuppy\\FShow.cs",
+              "RelativeToolTip": "WF_Whiepuppy\\FShow.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAAAL0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T13:58:49.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FShow.cs [Design]",
+              "DocumentMoniker": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\WF_Whiepuppy\\FShow.cs",
+              "RelativeDocumentMoniker": "WF_Whiepuppy\\FShow.cs",
+              "ToolTip": "D:\\New folder (2)\\WF_WhitePuppyV0.1\\WF_Whiepuppy\\FShow.cs [Design]",
+              "RelativeToolTip": "WF_Whiepuppy\\FShow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T13:58:48.585Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
