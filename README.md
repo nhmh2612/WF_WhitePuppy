@@ -99,11 +99,37 @@ Sau khi thu thập và phân tích các gói tin, bạn có thể lưu lại d�
 
 Để dừng việc bắt gói tin, nhấn vào nút **Stop Capture**. Sau khi dừng, dữ liệu gói tin sẽ được lưu lại và phần mềm sẽ thông báo về trạng thái kết thúc quá trình bắt gói tin.
 
-## Các Bug Cố Hữu và Các Sửa Chữa
+## Các Phiên Bản Windows và Hệ Điều Hành Hỗ Trợ
 
-- **Lỗi thiết bị mạng không khả dụng**: Đã xử lý và kiểm tra trước khi bắt đầu bắt gói tin, giúp tránh lỗi nếu thiết bị mạng không khả dụng hoặc không mở được.
-- **Hiển thị thông báo lỗi khi bắt gói tin không thành công**: Phần mềm đã được cập nhật để xử lý ngoại lệ và cung cấp thông báo lỗi rõ ràng nếu không thể bắt gói tin từ thiết bị mạng.
-- **Sửa lỗi phân tích gói tin bị lỗi**: Các trường hợp gói tin không hợp lệ hoặc bị lỗi đã được xử lý và thông báo cho người dùng.
+WF_WhitePuppy được phát triển để chạy trên các phiên bản hệ điều hành Windows phổ biến và hỗ trợ nhiều cấu hình khác nhau. Dưới đây là các hệ điều hành mà phần mềm tương thích.
+
+### Phiên Bản Windows Hỗ Trợ:
+
+- **Windows 10** (Tất cả các phiên bản, bao gồm Home, Pro, Enterprise)
+- **Windows 11** (Tất cả các phiên bản)
+- **Windows Server 2016** và **Windows Server 2019**
+- **Windows Server 2022**
+
+### Các Phiên Bản Windows Không Hỗ Trợ:
+
+- **Windows 8** và các phiên bản cũ hơn (Windows 7, Windows Vista, Windows XP): Các phiên bản này có thể gặp khó khăn khi tương thích với các thư viện mới và các tính năng của phần mềm. Bạn có thể cần phải thực hiện thêm các bước cấu hình hoặc nâng cấp lên phiên bản mới.
+
+### Khuyến Nghị:
+
+- Để có trải nghiệm ổn định và hiệu quả, chúng tôi khuyến khích bạn sử dụng **Windows 10** trở lên. Phiên bản Windows này hỗ trợ đầy đủ các công nghệ mạng  và các thư viện phần mềm.
+- Các hệ điều hành **Windows Server** cũng hỗ trợ WF_WhitePuppy, nhưng hãy đảm bảo các dịch vụ và cấu hình mạng được thiết lập chính xác.
+
+### Hệ Điều Hành Khác:
+
+- **Linux (Ubuntu, Debian)**: Phần mềm này hiện chỉ hỗ trợ trên hệ điều hành Windows và không tương thích trực tiếp với các hệ điều hành như Linux hoặc macOS. Tuy nhiên, người dùng có thể sử dụng máy ảo hoặc phần mềm giả lập Windows trên các hệ điều hành này để chạy phần mềm.
+
+### Yêu Cầu Hệ Thống:
+
+Đảm bảo hệ thống của bạn đáp ứng các yêu cầu tối thiểu về phần cứng và phần mềm để WF_WhitePuppy hoạt động hiệu quả.
+- **Bộ xử lý**: Intel Core i3 hoặc AMD tương đương trở lên.
+- **RAM**: 4 GB trở lên.
+- **Ổ cứng**: 500 MB dung lượng trống để cài đặt và lưu trữ dữ liệu gói tin.
+- **.NET Framework**: Cần cài đặt **.NET Framework 4.5** hoặc phiên bản cao hơn.
 
 ## Liên Hệ và Góp Ý
 
