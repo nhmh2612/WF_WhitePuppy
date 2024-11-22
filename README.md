@@ -50,7 +50,8 @@ WF_WhitePuppy là một phần mềm mạnh mẽ được thiết kế để b�
 - **Card mạng phải hoạt động**: Phần mềm yêu cầu card mạng phải được bật và khả dụng để bắt các gói tin.
 - **Máy ảo hoặc card mạng ảo**: Nếu sử dụng card mạng ảo hoặc máy ảo, đảm bảo rằng các thiết bị này đã được cấu hình đúng và có thể bắt gói tin.
 - **Quyền truy cập mạng**: Phần mềm yêu cầu quyền truy cập mạng đầy đủ để có thể bắt gói tin từ các thiết bị.
-
+- **Quyền chạy quyển admin**: Phần mềm có thể yêu cầu quyền chạy admin.
+- 
 ### Post-condition (Trạng thái hệ thống sau khi chạy)
 
 - **Hệ thống ổn định**: Sau khi chạy, phần mềm không ảnh hưởng đến các ứng dụng khác đang chạy trên hệ thống.
