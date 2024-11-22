@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using PacketDotNet;
 using PacketDotNet.Ieee80211;
+using System.Net.NetworkInformation;
 
 namespace WF_Whiepuppy
 {
@@ -26,6 +27,7 @@ namespace WF_Whiepuppy
             // Thiết lập ComboBox 
             comboBoxFilter.Items.Add("Show All");
             comboBoxFilter.Items.Add("Wired");
+            comboBoxFilter.Items.Add("Wireless");
             comboBoxFilter.Items.Add("Virtual");
             comboBoxFilter.SelectedIndex = 0; // Chọn "Show All" là giá trị mặc định
         }
@@ -72,20 +74,10 @@ namespace WF_Whiepuppy
                 return;
             }
 
-            device.OnPacketArrival += new PacketArrivalEventHandler(OnPacketArrival);
-
-            // Mở thiết bị
-            device.Open();
-
-            // Bắt đầu quá trình bắt gói tin
-            device.StartCapture();
-
-            // Mở form hiển thị thông tin gói tin
-            PacketViewerForm packetViewerForm = new PacketViewerForm();
+            // Mở form PacketViewerForm và chuyển thiết bị cho form này
+            PacketViewerForm packetViewerForm = new PacketViewerForm(device);
             packetViewerForm.Show();
         }
-
-
 
         // Sự kiện khi nhấn nút "F5" để làm mới danh sách
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -105,22 +97,14 @@ namespace WF_Whiepuppy
                     // Dừng bắt gói tin nếu thiết bị hiện tại đã được mở
                     if (currentDevice != null)
                     {
-                        //
                         currentDevice.StopCapture();
                         currentDevice.Close();
                     }
 
-                    // Bắt đầu bắt gói tin cho thiết bị mới
+                    // Chuyển sang form mới và bắt đầu bắt gói tin
                     StartPacketCapture(selectedDevice);
-                    currentDevice = CaptureDeviceList.Instance.FirstOrDefault(d => d.Description == selectedDevice);
                 }
             }
-        }
-
-        private void btn_refresh_Click(object sender, EventArgs e)
-        {
-            // Gọi hàm LoadNetworkDevices() để làm mới danh sách thiết bị mạng
-            LoadNetworkDevices();
         }
 
         private static void OnPacketArrival(object sender, PacketCapture e)
@@ -176,34 +160,35 @@ namespace WF_Whiepuppy
             }
         }
 
-
-        private void ShowPacketInfo(string sourceIp, string destinationIp, string protocol, byte[] packetData)
+        private void comboBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (InvokeRequired)
-            {
-                Invoke(new Action(() => ShowPacketInfo(sourceIp, destinationIp, protocol, packetData)));
-            }
-            else
-            {
-                // Kiểm tra xem form đã tồn tại hay chưa
-                PacketViewerForm packetViewer = null;
+            string filter = comboBoxFilter.SelectedItem.ToString();
+            List<ICaptureDevice> filteredDevices = new List<ICaptureDevice>();
 
-                // Tìm form đã mở
-                foreach (Form form in Application.OpenForms)
+            foreach (var device in CaptureDeviceList.Instance)
+            {
+                // Lấy danh sách các giao diện mạng
+                var networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
+                var matchingInterface = networkInterfaces.FirstOrDefault(ni => ni.Description == device.Description);
+
+                // Nếu tìm thấy giao diện mạng phù hợp, áp dụng bộ lọc
+                if (matchingInterface != null)
                 {
-                    if (form is PacketViewerForm)
+                    if (filter == "Show All" ||
+                        (filter == "Wired" && matchingInterface.NetworkInterfaceType == NetworkInterfaceType.Ethernet) ||
+                        (filter == "Wireless" && matchingInterface.NetworkInterfaceType == NetworkInterfaceType.Wireless80211) ||
+                        (filter == "Virtual" && matchingInterface.NetworkInterfaceType == NetworkInterfaceType.Loopback))
                     {
-                        packetViewer = form as PacketViewerForm;
-                        break;
+                        filteredDevices.Add(device);
                     }
                 }
+            }
 
-                // Nếu form chưa mở, tạo một instance mới
-                if (packetViewer == null)
-                {
-                    packetViewer = new PacketViewerForm();
-                    packetViewer.Show(); // Hiển thị form
-                }
+            // Cập nhật ListBox với các thiết bị đã lọc
+            listBoxDevices.Items.Clear();
+            foreach (var device in filteredDevices)
+            {
+                listBoxDevices.Items.Add(device.Description);
             }
         }
 
