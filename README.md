@@ -10,7 +10,7 @@ WF_WhitePuppy là một phần mềm mạnh mẽ (chắc thế) được thiết
 - **Lưu Dữ Liệu Gói Tin**: Sau khi bắt gói tin, người dùng có thể lưu thông tin gói tin vào tệp `.pcap` để sử dụng lại sau này.
 - **Phân Tích Chi Tiết**: Phân tích thông tin chi tiết của từng gói tin, chẳng hạn như các thông tin liên quan đến Ethernet, IP, và các giao thức khác.
 - **Lưu Lại Tệp Chứa Các Gói Tin**: Lưu lại một tệp sau khi phân tích xong.
-- 
+  
 ## Cài Đặt
 
 ### Yêu Cầu Hệ Thống
