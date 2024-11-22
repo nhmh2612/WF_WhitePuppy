@@ -1,6 +1,6 @@
 # WF_WhitePuppy - Phần mềm Bắt và Xem Nội Dung Gói Tin Mạng
 
-WF_WhitePuppy là một phần mềm mạnh mẽ được thiết kế để bắt, phân tích và xem thông tin chi tiết của các gói tin mạng trong hệ thống. Phần mềm sử dụng thư viện **SharpPcap** và **PacketDotNet** để thu thập và phân tích dữ liệu gói tin từ các thiết bị mạng trong môi trường của bạn.
+WF_WhitePuppy là một phần mềm mạnh mẽ (chắc thế) được thiết kế để bắt, phân tích và xem thông tin chi tiết của các gói tin mạng trong hệ thống. Phần mềm sử dụng thư viện **SharpPcap** và **PacketDotNet** để thu thập và phân tích dữ liệu gói tin từ các thiết bị mạng trong môi trường của bạn.
 
 ## Tính Năng
 
@@ -9,7 +9,8 @@ WF_WhitePuppy là một phần mềm mạnh mẽ được thiết kế để b�
 - **Lọc Gói Tin**: Cho phép lọc các gói tin theo các tiêu chí như địa chỉ IP nguồn, địa chỉ IP đích, giao thức, v.v.
 - **Lưu Dữ Liệu Gói Tin**: Sau khi bắt gói tin, người dùng có thể lưu thông tin gói tin vào tệp `.pcap` để sử dụng lại sau này.
 - **Phân Tích Chi Tiết**: Phân tích thông tin chi tiết của từng gói tin, chẳng hạn như các thông tin liên quan đến Ethernet, IP, và các giao thức khác.
-
+- **Lưu Lại Tệp Chứa Các Gói Tin**: Lưu lại một tệp sau khi phân tích xong.
+- 
 ## Cài Đặt
 
 ### Yêu Cầu Hệ Thống
@@ -45,14 +46,14 @@ WF_WhitePuppy là một phần mềm mạnh mẽ được thiết kế để b�
 3. **Chạy phần mềm**:
    - Sau khi biên dịch thành công, bạn có thể chạy phần mềm trực tiếp từ Visual Studio hoặc sử dụng tệp thực thi (.exe) trong thư mục output.
 
-### Pre-condition (Điều kiện tiên quyết)
+### Điều kiện tiên quyết
 
 - **Card mạng phải hoạt động**: Phần mềm yêu cầu card mạng phải được bật và khả dụng để bắt các gói tin.
 - **Máy ảo hoặc card mạng ảo**: Nếu sử dụng card mạng ảo hoặc máy ảo, đảm bảo rằng các thiết bị này đã được cấu hình đúng và có thể bắt gói tin.
 - **Quyền truy cập mạng**: Phần mềm yêu cầu quyền truy cập mạng đầy đủ để có thể bắt gói tin từ các thiết bị.
 - **Quyền chạy quyển admin**: Phần mềm có thể yêu cầu quyền chạy admin.
 - 
-### Post-condition (Trạng thái hệ thống sau khi chạy)
+### Trạng thái hệ thống sau khi chạy
 
 - **Hệ thống ổn định**: Sau khi chạy, phần mềm không ảnh hưởng đến các ứng dụng khác đang chạy trên hệ thống.
 - **Lưu trữ gói tin**: Dữ liệu gói tin sẽ được lưu vào tệp `.pcap` hoặc tệp định dạng khác mà bạn chọn.
@@ -66,7 +67,7 @@ Khi mở phần mềm, danh sách các thiết bị mạng khả dụng trên h�
 
 ### Bước 2: Bắt Gói Tin
 
-Nhấn vào nút **Start Capture** để bắt đầu việc thu thập gói tin. Các gói tin sẽ được hiển thị trong bảng với các thông tin như:
+Nhấn vào nút **Bắt đầu** để bắt đầu việc thu thập gói tin. Các gói tin sẽ được hiển thị trong bảng với các thông tin như:
 
 - **IPv Version**: Phiên bản giao thức IP (IPv4 hoặc IPv6).
 - **Source IP**: Địa chỉ IP nguồn.
@@ -91,6 +92,8 @@ Khi nhấp vào một gói tin trong bảng, phần mềm sẽ hiển thị thô
 - **Ethernet**: Thông tin về địa chỉ MAC nguồn và đích.
 - **IP**: Thông tin về địa chỉ IP, subnet mask, và các thuộc tính liên quan.
 - **Protocol**: Chi tiết về giao thức sử dụng (TCP, UDP, ICMP, v.v.).
+
+Hoặc có thể bám vào gói tin, bên dưới sẽ hiển thị nội dung của các gói tin đấy
 
 ### Bước 5: Lưu Gói Tin
 
